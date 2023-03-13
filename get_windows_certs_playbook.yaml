@@ -1,0 +1,5 @@
+- name: get-certificats
+  hosts: ca
+  tasks:
+    - name: List certificates on a Windows system
+      ansible.builtin.raw: Get-ChildItem Cert:\ -Recurse
