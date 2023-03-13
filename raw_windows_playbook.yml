@@ -1,0 +1,5 @@
+- name: My ping playbook
+  hosts: ad
+  tasks:
+    - name: List user accounts on a Windows system
+      ansible.builtin.raw: Get-WmiObject -Class Win32_UserAccount
