@@ -1,0 +1,5 @@
+- name: My ping playbook
+  hosts: ad
+  tasks:
+    - name: Ping my ad hosts
+      win_ping:
